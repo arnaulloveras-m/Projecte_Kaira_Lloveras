@@ -1,0 +1,42 @@
+.logo{
+  float: left;
+  width: 4%;
+  margin: 0.2% 0 0 35%;
+}
+
+header {
+  background-color: blue;
+  height: 3rem;
+}
+.logo:hover{
+  background: linear-gradient(blue, red);
+}
+
+ul {
+  background: red;
+  border: 1px solid #7C7C7C;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  color: #333;
+  display: block;
+  padding: .3em;
+  text-decoration: none;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #7C7C7C;
+}
+ul li {
+  float:left;
+  width: 16.66%;
+}
+
+li:hover{
+  background: linear-gradient(blue, red);
+}
+
+ul{
+  overflow: hidden;
+  text-align: center;
+}
