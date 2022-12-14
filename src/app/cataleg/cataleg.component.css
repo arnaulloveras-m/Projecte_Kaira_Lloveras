@@ -1,0 +1,17 @@
+.fotos{
+  float: left;
+  display: flex;
+}
+
+.bucks{
+  width: 20em;
+}
+.bulls{
+  width: 20em;
+}
+.gsw{
+  width: 20em;
+}
+.lakers{
+  width: 20em;
+}

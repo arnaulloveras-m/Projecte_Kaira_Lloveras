@@ -1,0 +1,38 @@
+body {
+  height: 80%;
+}
+
+
+.p_principal{
+  text-align: center;
+}
+
+.tots_equips{
+  margin: 0 42.5%;
+}
+
+.qfem{
+  font-family: Arial;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.h2_principal{
+  text-align: center;
+}
+
+.suns_city{
+  margin: 0 45%;
+}
+
+.text_suns{
+  font-family: Arial;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.body_principal{
+  background-color: #8673A1;
+}
