@@ -24,6 +24,7 @@ import {CondicionsComponent} from "./condicions/condicions.component";
     ContacteComponent,
     RegistreComponent
   ],
+  //import
   imports: [
     BrowserModule,
     RouterModule.forRoot([
