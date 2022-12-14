@@ -9,6 +9,9 @@ import { CatalegComponent } from './cataleg/cataleg.component';
 import {CistellaComponent} from "./cistella/cistella.component";
 import {ContacteComponent} from "./contacte/contacte.component";
 import {RegistreComponent} from "./registre/registre.component";
+import { RouterModule } from '@angular/router';
+import {LoginComponent} from "./login/login.component";
+import {CondicionsComponent} from "./condicions/condicions.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +25,15 @@ import {RegistreComponent} from "./registre/registre.component";
     RegistreComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: 'index', component: IndexComponent},
+      {path: 'contacte', component: ContacteComponent},
+      {path: 'registre', component: RegistreComponent},
+      {path: 'cistella', component: CistellaComponent},
+      {path: 'condicions', component: CondicionsComponent},
+      {path: 'cataleg', component: CatalegComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
