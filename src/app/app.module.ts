@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
-import { IndexComponent } from './index/index.component';
-import { FooterComponent } from './footer/footer.component';
-import { CatalegComponent } from './cataleg/cataleg.component';
+import {RegistreComponent} from "./registre/registre.component";
+import { AppRoutingModule } from './app-routing.module';
+import {ContacteComponent} from "./contacte/contacte.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    IndexComponent,
-    FooterComponent,
-    CatalegComponent
+    RegistreComponent,
+    ContacteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
