@@ -8,18 +8,73 @@
   <body class="body_principal">
   <div class="comprar">
     <div class="contenidor1">
-      <img class="bucks" src="../../assets/samarretabucks.png">
       <br>
-      <p>Preu Samarreta Bucks: 79,99€
-        <br>
+      <button id="buto_bucks" value="Bucks" class="button_categoria">Bucks</button>
+      <button id="buto_bulls" value="Bulls" class="button_categoria">Bulls</button>
+      <br>
+      <br>
+      <img alt="samarreta" class="bucks" src="../../assets/samarretabucks.png">
+      <img alt="samarreta" class="bucks" src="../../assets/samarretabucks.png">
+      <img alt="samarreta" class="bucks" src="../../assets/samarretabucks.png">
+      <br>
+      <br>
+      <p class="p_bucks">Preu Samarreta Bucks:
+        <span id = "preu_samarreta1">79,99€</span>
       </p>
-      <button value="-"></button><input id="prod_cant" type="text" name="num_productes" value="Número de productes"><button value="+"></button>
+      <p class="p_bucks">Preu Samarreta Bucks:
+      <span id = "preu2_samarreta1">79,99€</span>
+      </p>
+      <p class="p_bucks">Preu Samarreta Bucks:
+      <span id = "preu3_samarreta1">79,99€</span>
+      </p>
+      <br>
+
+      <p class="p_bucks">Número de productes:
+        <button id="restar" value="-">-</button>
+        <span id="prod_cant" style="background-color: white">0</span>
+        <button id="sumar" value="+">+</button>
+      </p>
+      <p class="p_bucks">Número de productes:
+        <button id="restar_1_2"value="-">-</button>
+        <span id="prod_cant_1_2" style="background-color: white">0</span>
+        <button id="sumar_1_2" value="+">+</button>
+      </p>
+      <p class="p_bucks">Número de productes:
+        <button id="restar_1_3" value="-">-</button>
+        <span id="prod_cant_1_3" style="background-color: white">0</span>
+        <button id="sumar_1_3" value="+">+</button>
+      </p>
     </div>
+    <br>
     <div class="contenidor2">
       <img class="bulls" src="../../assets/samarretabulls.png">
+      <img class="bulls" src="../../assets/samarretabulls.png">
+      <img class="bulls" src="../../assets/samarretabulls.png">
       <br>
-      <p>Preu Samarreta dels Bulls: 79,99€
-        <br>
+      <p class="p_bulls">Preu Samarreta dels Bulls:
+        <span id="preu_samarreta2">79,99€</span>
+      </p>
+      <p class="p_bulls">Preu Samarreta dels Bulls:
+        <span id="preu2_samarreta2">79,99€</span>
+      </p>
+      <p class="p_bulls">Preu Samarreta dels Bulls:
+        <span id="preu3_samarreta2">79,99€</span>
+      </p>
+      <br>
+      <p class="p_bulls">Número de productes:
+        <button id="restar2" value="-">-</button>
+        <span id="prod_cant2" style="background-color: white">0</span>
+        <button id="sumar2" value="+">+</button>
+      </p>
+      <p class="p_bulls">Número de productes:
+        <button value="-">-</button>
+        <span style="background-color: white">0</span>
+        <button value="+">+</button>
+      </p>
+      <p class="p_bulls">Número de productes:
+        <button value="-">-</button>
+        <span style="background-color: white">0</span>
+        <button value="+">+</button>
       </p>
       <br>
       <br>
@@ -27,7 +82,7 @@
     <div class="=total">
       <aside>
         <div class="total">
-          <p>Preu total de compra és: 159,98€</p>
+          <p>Preu total de compra és: <span id="preu"></span></p>
           <label><input type="radio" value="">He llegit i accepto les condicions</label>
           <br>
           <br>
