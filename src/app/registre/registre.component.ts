@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./registre.component.css']
 })
 export class RegistreComponent {
+  constructor() {
+    //@ts-ignore
 
-}
+    }
+  }
+
