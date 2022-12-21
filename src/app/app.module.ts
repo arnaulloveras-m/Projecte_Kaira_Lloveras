@@ -36,6 +36,7 @@ import {CondicionsComponent} from "./condicions/condicions.component";
       {path: 'cistella', component: CistellaComponent},
       {path: 'condicions', component: CondicionsComponent},
       {path: 'cataleg', component: CatalegComponent},
+      {path: '', redirectTo: '/index', pathMatch: 'full'},
     ]),
   ],
   providers: [],

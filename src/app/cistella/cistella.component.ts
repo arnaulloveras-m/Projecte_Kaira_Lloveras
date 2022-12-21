@@ -220,15 +220,19 @@ export class CistellaComponent {
 
     const buto = document.getElementById('buto_bulls')
 
+    const el2 = document.getElementById('contenidor2')
+    const buto2 = document.getElementById('buto_bucks')
+
     if (el != null && buto != null){
       buto.addEventListener('click', function Click(){
         if (el.style.display === 'none') {
           el.style.display = 'block';
 
-          buto.textContent = 'Bulls'
+          buto.textContent = 'Bulls';
 
-          buto.style.backgroundColor = 'grey'
-        } else{
+          buto.style.backgroundColor = 'grey';
+
+        } else {
           el.style.display = 'none'
 
           buto.textContent = 'Bulls'
@@ -238,8 +242,7 @@ export class CistellaComponent {
       })
     }
 
-    const el2 = document.getElementById('contenidor2')
-    const buto2 = document.getElementById('buto_bucks')
+
 
     if (el2 != null && buto2 != null){
       buto2.addEventListener('click', function Click(){
