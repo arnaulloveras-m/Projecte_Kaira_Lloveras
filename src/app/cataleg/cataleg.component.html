@@ -22,38 +22,25 @@
         <img alt="samarreta" class="bucks" src="../../assets/pijama_bucks.png">
         <br>
         <br>
-        <p class="p_bucks">Preu Samarreta Bucks:
-          <span id = "preu_1">79,99</span>€
+        <ng-container *ngFor ="let producte of productes">
+        <p class="p_bucks">Preu {{producte.nom}}:
+          <span id = "preu_1">{{producte.preu}}</span>€
         </p>
-        <p class="p_bucks">Preu Bufanda Bucks:
-          <span id = "preu_2">32,09</span>€
-        </p>
-        <p class="p_bucks">Preu Pijama Bucks:
-          <span id = "preu_3">24,00</span>€
-        </p>
-        <br>
+        </ng-container>
         <button class="b_comprar">Comprar</button>
         <button class="b_comprar">Comprar</button>
         <button class="b_comprar">Comprar</button>
         <br>
         <br>
-      </div>
-    </div>
-  <div id="contenidor2">
-    <img class="bulls" src="../../assets/samarretabulls.png">
-    <img class="bulls" src="../../assets/calzoncillos_bulls.jpg">
-    <img class="bulls" src="../../assets/mascota_bulls.jpeg">
-    <br>
-    <p class="p_bulls">Preu Samarreta dels Bulls:
-      <span id="preu_4">79,99</span>€
-    </p>
-    <p class="p_bulls">Preu Calçotets dels Bulls:
-      <span id="preu_5">11,00</span>€
-    </p>
-    <p class="p_bulls">Preu Nino dels Bulls:
-      <span id="preu_6">21,20</span>€
-    </p>
-    <br>
+        <img alt="samarreta" class="bulls" src="../../assets/samarretabulls.png">
+        <img alt="samarreta" class="bulls" src="../../assets/calzoncillos_bulls.jpg">
+        <img alt="samarreta" class="bulls" src="../../assets/mascota_bulls.jpeg">
+        <ng-container *ngFor ="let producte2 of productes2">
+          <p class="p_bulls">Preu {{producte2.nom}}:
+            <span id = "preu_2">{{producte2.preu}}</span>€
+          </p>
+        </ng-container>
+
     <button class="b_comprar">Comprar</button>
     <button class="b_comprar">Comprar</button>
     <button class="b_comprar">Comprar</button>
@@ -63,5 +50,6 @@
   <br>
   <br>
   <br>
-  </body>
+    </div>
+</body>
 </html>
