@@ -12,6 +12,7 @@ import {RegistreComponent} from "./registre/registre.component";
 import { RouterModule } from '@angular/router';
 import {LoginComponent} from "./login/login.component";
 import {CondicionsComponent} from "./condicions/condicions.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import {CondicionsComponent} from "./condicions/condicions.component";
       {path: 'cistella', component: CistellaComponent},
       {path: 'condicions', component: CondicionsComponent},
       {path: 'cataleg', component: CatalegComponent},
+      {path: '', redirectTo: '/index', pathMatch: 'full'},
     ]),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
