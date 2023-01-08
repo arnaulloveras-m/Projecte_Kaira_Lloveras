@@ -3,12 +3,12 @@
 }
 
 .bucks{
-  width: 20em;
+  width: 22%;
   height: 20em;
   margin: 0 5%;
 }
 .bulls{
-  width: 20em;
+  width: 22%;
   height: 20em;
   margin: 0 5%;
 }
@@ -50,17 +50,17 @@
 }
 
 .p_bucks{
-  margin: 0 14% 0 5%;
+  margin: 0 15% 0 3%;
   display: inline;
 }
 
 .p_bulls{
-  margin: 0 12% 0 5%;
+  margin: 0 12% 0 3%;
   display: inline;
 }
 
 .pbulls_prod{
-  margin: 0 13.5% 0 5%;
+  margin: 0 13.5% 0 4%;
   display: inline;
 }
 

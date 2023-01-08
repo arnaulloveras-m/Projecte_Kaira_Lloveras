@@ -3,12 +3,12 @@ body{
 }
 
 .bucks{
-  width: 20em;
+  width: 22%;
   height: 20em;
   margin: 0 5%;
 }
 .bulls{
-  width: 20em;
+  width: 22%;
   height: 20em;
   margin: 0 5%;
 }
@@ -21,12 +21,12 @@ body{
 }
 
 .p_bucks{
-  margin: 0 12.7% 0 5%;
+  margin: 0 15% 0 3%;
   display: inline;
 }
 
 .p_bulls{
-  margin: 0 10.4% 0 6.8%;
+  margin: 0 15% 0 3%;
   display: inline;
 }
 
@@ -35,6 +35,6 @@ body{
 }
 
 .b_comprar{
-  margin: 0 21% 0 5%;
+  margin: 0 10% 0 10%;
   display: inline;
 }
