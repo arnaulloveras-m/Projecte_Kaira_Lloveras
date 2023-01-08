@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-registre',
@@ -7,9 +7,16 @@ import {FormControl, FormGroup} from "@angular/forms";
   styleUrls: ['./registre.component.css']
 })
 export class RegistreComponent {
-  constructor() {
-    //@ts-ignore
 
-    }
+  registerForm = new FormGroup({
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
+  });
+
+  constructor() {}
+
+  registerUser() {
+    localStorage.setItem('register', JSON.stringify(this.registerForm.value))
   }
-
+}

@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-  <meta charset="UTF-8">
-  <title>Samarretes NBA</title>
-  <link rel="stylesheet" type="text/css" href="login.component.css" title="style">
-</head>
-<body>
 <form class="loginForm" [formGroup]="loginForm" method="post" (ngSubmit)="onLogin()">
+  <div *ngIf="invalidCredentials">
+    Credencials Incorrectes
+    <button (click)="hideErrorMsg()">cross</button>
+  </div>
+
   <h3>Login a la nostra pàgina</h3>
   <label>
     Correu:
-    <input  class="controls"type="email" name="correu" id="correu" placeholder="Ingresi el seu Correu">
+    <input  class="controls" type="email" formControlName="email" name="correu" id="correu" placeholder="Ingresi el seu Correu">
   </label>
   <br>
   <label>
     Contrasenya:
-    <input class="controls" type="password" name="contrasenya" id="contrasenya" placeholder="Ingresi la contrasenya">
+    <input class="controls" type="password" formControlName="password" name="contrasenya" id="contrasenya" placeholder="Ingresi la contrasenya">
   </label>
 
-  <button class="button" type="submit">Accedir</button>
+  <button class="button" type="submit" [disabled]="!loginForm.valid">Accedir</button>
 </form>
-
-</body>
