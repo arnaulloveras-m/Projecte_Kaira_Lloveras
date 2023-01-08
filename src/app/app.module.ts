@@ -9,10 +9,10 @@ import { CatalegComponent } from './cataleg/cataleg.component';
 import {CistellaComponent} from "./cistella/cistella.component";
 import {ContacteComponent} from "./contacte/contacte.component";
 import {RegistreComponent} from "./registre/registre.component";
-import { RouterModule } from '@angular/router';
 import {LoginComponent} from "./login/login.component";
-import {CondicionsComponent} from "./condicions/condicions.component";
 import {ReactiveFormsModule} from "@angular/forms";
+import {AppRoutingModule} from "./app-routing.module";
+import {AuthModule} from "./auth/auth.module";
 
 @NgModule({
   declarations: [
@@ -26,19 +26,10 @@ import {ReactiveFormsModule} from "@angular/forms";
     ContacteComponent,
     RegistreComponent
   ],
-  //import2
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      {path: 'index', component: IndexComponent},
-      {path: 'login', component: LoginComponent},
-      {path: 'contacte', component: ContacteComponent},
-      {path: 'registre', component: RegistreComponent},
-      {path: 'cistella', component: CistellaComponent},
-      {path: 'condicions', component: CondicionsComponent},
-      {path: 'cataleg', component: CatalegComponent},
-      {path: '', redirectTo: '/index', pathMatch: 'full'},
-    ]),
+    AppRoutingModule,
+    AuthModule,
     ReactiveFormsModule,
   ],
   providers: [],

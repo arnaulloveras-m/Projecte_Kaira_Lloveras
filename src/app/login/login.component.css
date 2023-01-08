@@ -51,3 +51,6 @@
 .loginForm .button:hover{
   background: linear-gradient(blue, lime);
 }
+label {
+  color: black;
+}

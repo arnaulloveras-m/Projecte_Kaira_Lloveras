@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Samarretes NBA</title>
-
-  <link rel="stylesheet" type="text/css" href="menu.component.css" title="style">
-</head>
-<body class="body_principal">
+<div class="body_principal">
   <a href="menu.component.html"><img class="logo" alt="logo" src="../../assets/logo.png"></a>
   <header>
     <h1>Samarretes NBA</h1>
-
   </header>
   <nav>
     <ul class="menu_principl">
@@ -21,7 +12,7 @@
       <li class="li_5"><a href="../condicions">Condicions</a></li>
       <li class="li_6"><a href="../contacte">Contacte</a></li>
       <li class="li_7"><a href="../login">Login</a></li>
+      <li *ngIf="isLogged">{{username}}</li>
     </ul>
   </nav>
-</body>
-</html>
+</div>
