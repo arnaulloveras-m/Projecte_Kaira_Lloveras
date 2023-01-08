@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
@@ -6,10 +6,10 @@ import {FormControl, FormGroup} from "@angular/forms";
   templateUrl: './registre.component.html',
   styleUrls: ['./registre.component.css']
 })
-export class RegistreComponent {
-  constructor() {
-    //@ts-ignore
-
-    }
-  }
+export class RegistreComponent implements AfterViewInit{
+@ViewChild('forViewChild') forViewChild!: ElementRef;
+  ngAfterViewInit() {
+  this.forViewChild.nativeElement.value = 'elteucorreu@gmail.com'
+}
+}
 

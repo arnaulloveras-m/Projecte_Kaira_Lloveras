@@ -46,6 +46,7 @@ constructor(){
         preu: 11.99,
         quantitat: 0,
         imatge: "assets/mascota_bulls.jpeg"}
+
         localStorage.setItem("Samarreta Bucks", JSON.stringify(samarretabucks))
         localStorage.setItem("Bufanda Bucks", JSON.stringify(bufandabucks))
         localStorage.setItem("Pijama Bucks", JSON.stringify(pijamabucks))

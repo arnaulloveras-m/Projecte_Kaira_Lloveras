@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
@@ -6,7 +6,7 @@ import {FormControl, FormGroup} from "@angular/forms";
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements AfterViewInit{
   loginForm = new FormGroup({
     username: new FormControl(''),
     password: new FormControl(''),
@@ -16,4 +16,10 @@ export class LoginComponent {
     console.log(this.loginForm.value);
     localStorage.setItem('infoForm', JSON.stringify(this.loginForm.value));
   }
+
+  @ViewChild('ViewChild') ViewChild!: ElementRef;
+  ngAfterViewInit() {
+    this.ViewChild.nativeElement.value = '@gmail.com'
+  }
+
 }

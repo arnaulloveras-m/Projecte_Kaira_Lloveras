@@ -11,7 +11,6 @@ export class CistellaComponent {
 
   constructor() {
     this.total = 0;
-    localStorage.getItem("Samarreta Bulls")
   }
 
   ngOnInit(){
