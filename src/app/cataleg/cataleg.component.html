@@ -22,17 +22,13 @@
         <img id = "img1" alt="samarreta" class="bucks" src="../../assets/samarretabucks.png">
         <img id = "img2" alt="samarreta" class="bucks" src="../../assets/bufanda_buks.jpg">
         <img id = "img3" alt="samarreta" class="bucks" src="../../assets/pijama_bucks.png">
-
         <br>
-        <p class="p_bucks">Preu <span id = "nom_1"> Samarreta Bucks</span>:
-          <span id = "preu_1">79,99</span>€
+        <ng-container *ngFor ="let producte of productes">
+        <p class="p_bucks">Preu {{producte["nom"]}}:
+          <span id = "preu_1">{{this.producte["preu"]}}</span>€
         </p>
-        <p class="p_bucks">Preu <span id = "nom_2"> Gorra Bucks</span>:
-          <span id = "preu_2">32,09</span>€
-        </p>
-        <p class="p_bucks">Preu <span id = "nom_3"> Pijama Bucks</span>:
-          <span id = "preu_3">24</span>€
-        </p>
+        </ng-container>
+
         <button id = "b_comprar_1" class="b_comprar">Comprar</button>
         <button id = "b_comprar_2" class="b_comprar">Comprar</button>
         <button id = "b_comprar_3" class="b_comprar">Comprar</button>
@@ -43,15 +39,11 @@
         <img id = "img4" class="bulls" src="../../assets/samarretabulls.png">
         <img id = "img5" class="bulls" src="../../assets/calzoncillos_bulls.jpg">
         <img id = "img6" class="bulls" src="../../assets/mascota_bulls.jpeg">
-        <p class="p_bulls">Preu <span id = "nom_4"> Samarreta Bulls</span>:
-          <span id = "preu_4">79,99</span>€
-        </p>
-        <p class="p_bulls">Preu <span id = "nom_5"> Calçotets Bulls</span>:
-          <span id = "preu_5">14,99</span>€
-        </p>
-        <p class="p_bulls">Preu <span id = "nom_6"> Mascota Bulls</span>:
-          <span id = "preu_6">11,99</span>€
-        </p>
+        <ng-container *ngFor ="let producte2 of productes2">
+          <p class="p_bulls">Preu {{producte2["nom"]}}:
+            <span id = "preu_2">{{this.producte2["preu"]}}</span>€
+          </p>
+        </ng-container>
 
     <button id = "b_comprar_4" class="b_comprar">Comprar</button>
     <button id = "b_comprar_5" class="b_comprar">Comprar</button>

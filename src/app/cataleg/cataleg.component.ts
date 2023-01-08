@@ -1,60 +1,42 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-cataleg',
   templateUrl: './cataleg.component.html',
   styleUrls: ['./cataleg.component.css']
 })
-export class CatalegComponent{
 
-constructor(){
-
-  this.grabar_localstorage();
-
-}
+export class CatalegComponent {
 
   //@ts-ignore
-  grabar_localstorage(){
-  let samarretabucks =
-    {
+  productes: producte[] =
+    [{
     nom: "Samarreta Bucks", preu: 79.99,
     quantitat: 0,
-    imatge: "assets/samarretabucks.png"}
-    let bufandabucks =
+    imatge: "assets/samarretabucks.png"},
       {nom: "Gorra Bucks",
       preu: 32.09,
       quantitat: 0,
-      image: "assets/bufanda_buks.jpg"}
-      let pijamabucks =
+      image: "assets/bufanda_buks.jpg"},
       {nom: "Pijama Bucks",
       preu: 24,
       quantitat: 0,
-      imatge: "assets/pijama_bucks.png"}
-  let samarretabulls =
-    {
+      imatge: "assets/pijama_bucks.png"}]
+      //@ts-ignore
+      productes2: producte2[] =
+        [{
       nom: "Samarreta Bulls", preu: 79.99,
       quantitat: 0,
-      imatge: "assets/samarretabulls.png"}
-      let calcotetsbulls =
-      {nom: "Calçotets",
+      imatge: "assets/samarretabulls.png"},
+    {nom: "Calçotets Bulls",
         preu: 14.99,
         quantitat: 0,
-        image: "assets/calzoncillos_bulls.jpeg"}
-        let mascotabulls =
+        image: "assets/calzoncillos_bulls.jpeg"},
       {nom: "Mascota Bulls",
         preu: 11.99,
         quantitat: 0,
         imatge: "assets/mascota_bulls.jpeg"}
-
-        localStorage.setItem("Samarreta Bucks", JSON.stringify(samarretabucks))
-        localStorage.setItem("Bufanda Bucks", JSON.stringify(bufandabucks))
-        localStorage.setItem("Pijama Bucks", JSON.stringify(pijamabucks))
-        localStorage.setItem("Samarreta Bulls", JSON.stringify(samarretabulls))
-        localStorage.setItem("Caçotets Bulls", JSON.stringify(calcotetsbulls))
-        localStorage.setItem("Mascota Bulls", JSON.stringify(mascotabulls))
-
-  }
+    ]
 
   ngOnInit(){
     const el = document.getElementById('contenidor1')
