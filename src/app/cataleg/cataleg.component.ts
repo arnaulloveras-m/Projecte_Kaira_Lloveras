@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './cataleg.component.html',
   styleUrls: ['./cataleg.component.css']
 })
-export class CatalegComponent {
-constrcutor(){
+export class CatalegComponent{
+
+constructor(){
 
   this.grabar_localstorage();
 
@@ -30,7 +31,6 @@ constrcutor(){
       preu: 24,
       quantitat: 0,
       imatge: "assets/pijama_bucks.png"}
-  //@ts-ignore
   let samarretabulls =
     {
       nom: "Samarreta Bulls", preu: 79.99,
@@ -46,8 +46,14 @@ constrcutor(){
         preu: 11.99,
         quantitat: 0,
         imatge: "assets/mascota_bulls.jpeg"}
+        localStorage.setItem("Samarreta Bucks", JSON.stringify(samarretabucks))
+        localStorage.setItem("Bufanda Bucks", JSON.stringify(bufandabucks))
+        localStorage.setItem("Pijama Bucks", JSON.stringify(pijamabucks))
+        localStorage.setItem("Samarreta Bulls", JSON.stringify(samarretabulls))
+        localStorage.setItem("Caçotets Bulls", JSON.stringify(calcotetsbulls))
         localStorage.setItem("Mascota Bulls", JSON.stringify(mascotabulls))
-        }
+
+  }
 
   ngOnInit(){
     const el = document.getElementById('contenidor1')
