@@ -50,3 +50,14 @@ ul{
   overflow: hidden;
   text-align: center;
 }
+
+button {
+  cursor: pointer;
+  background: red;
+}
+
+button:hover {
+  background: linear-gradient(blue, red);
+}
+
+

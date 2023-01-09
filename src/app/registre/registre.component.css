@@ -48,9 +48,7 @@
   font-size: 16px;
   cursor: pointer;
 }
-.button:hover{
-  background: linear-gradient(blue, lime);
-}
+
 .peu {
   position: fixed;
   text-align: center;
@@ -59,4 +57,6 @@
   height:10%;
   background-color: blue;
 }
-
+.form-register button:hover{
+  background: linear-gradient(blue, lime);
+}

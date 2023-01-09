@@ -2,6 +2,7 @@
   <a href="menu.component.html"><img class="logo" alt="logo" src="../../assets/logo.png"></a>
   <header>
     <h1>Samarretes NBA</h1>
+    <div class="username" *ngIf="isLogged">{{username}}</div>
   </header>
   <nav>
     <ul class="menu_principl">
@@ -13,7 +14,6 @@
       <li class="li_6"><a href="../contacte">Contacte</a></li>
       <li class="li_7"><a href="../login">Login</a></li>
       <button *ngIf="isLogged" (click)="logOut()">Logout</button>
-      <li *ngIf="isLogged">{{username}}</li>
     </ul>
   </nav>
 </div>

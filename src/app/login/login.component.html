@@ -1,7 +1,7 @@
 <form class="loginForm" [formGroup]="loginForm" method="post" (ngSubmit)="onLogin()">
   <div *ngIf="invalidCredentials">
-    Credencials Incorrectes
-    <button (click)="hideErrorMsg()">cross</button>
+    Credencials Incorrectes!
+    <button class="bLogin" (click)="hideErrorMsg()">x</button>
   </div>
 
   <h3>Login a la nostra pàgina</h3>

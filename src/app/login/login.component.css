@@ -51,6 +51,19 @@
 .loginForm .button:hover{
   background: linear-gradient(blue, lime);
 }
+
 label {
   color: black;
 }
+
+.loginForm .bLogin {
+  width: 10%;
+  background: red;
+  color: black;
+  cursor: pointer;
+}
+div {
+  color: black;
+  font-size: 17px;
+}
+
