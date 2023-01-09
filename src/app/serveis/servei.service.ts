@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 //@ts-ignore
 export class ServeiService {
 
-  productes: number[] = [0,0,0];
+  productes: number[] = [0,0,0,0,0,0,0];
 
   constructor() { }
 
@@ -18,6 +18,10 @@ export class ServeiService {
     if(this.productes[id] < 0){
       this.productes[id]--;
     }
+  }
+
+  getProductes(){
+    return this.productes;
   }
 
 }

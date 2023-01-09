@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ServeiService} from "../serveis/servei.service";
 
 @Component({
   selector: 'app-cataleg',
@@ -43,6 +44,11 @@ export class CatalegComponent {
         imatge: "assets/mascota_bulls.jpeg"}
     ]
 
+
+  constructor(private s: ServeiService){
+
+  }
+
   ngOnInit(){
     const el = document.getElementById('contenidor1')
 
@@ -86,5 +92,9 @@ export class CatalegComponent {
         }
       })
     }
+  }
+
+  afegirProducte(id: number){
+    this.s.afegirProductes(id);
   }
 }
