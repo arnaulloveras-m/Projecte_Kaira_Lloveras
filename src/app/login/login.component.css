@@ -54,6 +54,7 @@
 
 label {
   color: black;
+
 }
 
 .loginForm .bLogin {
@@ -62,8 +63,13 @@ label {
   color: black;
   cursor: pointer;
 }
+
+.loginForm .bLogin:hover{
+  background: linear-gradient(blue, lime);
+}
 div {
   color: black;
   font-size: 17px;
+  background-color: red;
 }
 

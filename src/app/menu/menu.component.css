@@ -60,4 +60,10 @@ button:hover {
   background: linear-gradient(blue, red);
 }
 
+.username {
+  float: right;
+  padding-right: 5%;
+  font-size: 17px;
+  font-family: "Arial Black";
 
+}

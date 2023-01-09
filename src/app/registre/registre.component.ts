@@ -8,6 +8,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class RegistreComponent {
 
+  /*Fa que sigui obligatori omplir els següents camps del registre.*/
   registerForm = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),

@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   passwordRegister: string = ''
   invalidCredentials: boolean = false
 
+  /*Validar el correu i la contrasenya a l'apartat de Log.*/
   loginForm = new FormGroup({
     email: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
@@ -20,6 +21,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router) {}
 
+  /*Mira si les dades del correu i la contrasenya que hi ha al registre coincideixen amb el Log.*/
   ngOnInit(): void {
     this.registerData = JSON.parse(localStorage.getItem("register") || '')
     Object.entries(this.registerData).forEach(([key, value]) => {

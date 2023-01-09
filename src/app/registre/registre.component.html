@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Samarretes NBA</title>
-  <link rel="stylesheet" type="text/css" href="registre.component.css" title="style">
-</head>
-<body>
 <form [formGroup]="registerForm"  class="form-register" (ngSubmit)="registerUser()">
   <h3>Registra't a la nostre pàgina</h3>
   <input  class="controls" type="text" formControlName="name" name="noms" id="noms" placeholder="Ingresi el seu Nom">
@@ -15,5 +7,3 @@
   <input class="controls" type="password" formControlName="password" name="contrasenya" id="contrasenya" placeholder="Ingresi la contrasenya per registrar-se">
   <input type="submit" value="Registra't" [disabled]="!registerForm.valid" class="button">
 </form>
-</body>
-</html>
