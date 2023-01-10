@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-registre',
@@ -15,9 +16,11 @@ export class RegistreComponent {
     password: new FormControl('', Validators.required),
   });
 
-  constructor() {}
+
+  constructor(private router: Router) {}
 
   registerUser() {
     localStorage.setItem('register', JSON.stringify(this.registerForm.value))
+    this.router.navigate(['login'])
   }
 }
