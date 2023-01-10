@@ -14,7 +14,7 @@
         <label><input type="radio" value="">He llegit i accepto les condicions</label>
         <br>
         <br>
-        <a class="btntotal" href="" role="button">Comprar</a>
+        <a class="btntotal" href="http://localhost:64707/cistella" role="button">Comprar</a> <a class="buidar" href="http://localhost:64707/cistella" role="button" (click)="this.s.buidarCistella()">Buidar</a>
       </div>
     </aside>
     <div id="contenidor1">
@@ -27,7 +27,7 @@
       <br>
       <br>
       <br>
-      <div id="producte2">
+      <div *ngIf="this.s.productes[2]!=0" id="producte2">
         <img class="img_prod" src="assets/bufanda_buks.jpg">
         <p class="p_prod">Preu Gorra Bucks: 32.09€</p>
       </div>
@@ -36,7 +36,7 @@
       <br>
       <br>
       <br>
-      <div id="producte3">
+      <div *ngIf="this.s.productes[3]!=0" id="producte3">
         <img class="img_prod" src="assets/pijama_bucks.png">
         <p class="p_prod">Preu Pijama Bucks: 24.00€</p>
       </div>
@@ -45,7 +45,7 @@
       <br>
       <br>
       <br>
-      <div id="producte4">
+      <div *ngIf="this.s.productes[4]!=0" id="producte4">
         <img class="img_prod" src="assets/samarretabulls.png">
         <p class="p_prod">Preu Samarreta Bulls: 79.99€</p>
       </div>
@@ -53,15 +53,14 @@
       <br>
       <br>
       <br>
-      <br>
-      <div id="producte5">
+      <div *ngIf="this.s.productes[5]!=0" id="producte5">
         <img class="img_prod" src="assets/calzoncillos_bulls.jpg">
         <p class="p_prod">Preu Calçotets Bucks: 14.99€</p>
       </div>
       <br>
       <br>
       <br>
-      <div id="producte6">
+      <div *ngIf="this.s.productes[6]!=0" id="producte6">
         <img class="img_prod" src="assets/mascota_bulls.jpeg">
         <p class="p_prod">Preu Mascota Bucks: 11.99€</p>
       </div>

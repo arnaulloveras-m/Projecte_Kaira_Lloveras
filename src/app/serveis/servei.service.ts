@@ -23,6 +23,11 @@ export class ServeiService implements OnInit{
   getProductes(){
     return this.productes;
   }
+
+  buidarCistella(){
+    this.productes=[0,0,0,0,0,0,0]
+  }
+
   ngOnInit(){
 
 

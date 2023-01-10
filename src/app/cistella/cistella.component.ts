@@ -10,6 +10,10 @@ export class CistellaComponent {
 
   total:any;
 
+  cistella: number[];
+
+  buidar: any;
+
   //@ts-ignore
   // productes: producte[] =
   //   [{ id: 1,
@@ -47,12 +51,15 @@ export class CistellaComponent {
 
 
   constructor(public s: ServeiService) {
-    this.total = 0;
+    this.cistella = this.s.getProductes();
+    this.buidar = this.s.buidarCistella();
   }
 
   ngOnInit(){
 
-    console.log(this.s.productes);
+    console.log(this.cistella)
+
+    console.log(this.s.getProductes())
 
     // let prod1 = document.getElementById('producte1')
     //

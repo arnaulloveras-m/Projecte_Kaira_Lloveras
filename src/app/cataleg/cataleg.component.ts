@@ -94,8 +94,10 @@ export class CatalegComponent {
     }
   }
 
-  afegirProducte(id: number){
+  addCart(id: number){
+    console.log("Afegint el producte " + id + " a la cistella")
     this.s.afegirProductes(id);
-    console.log(this.s.productes);
+    console.log(this.s.getProductes());
   }
-}
+  }
+
