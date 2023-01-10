@@ -96,5 +96,6 @@ export class CatalegComponent {
 
   afegirProducte(id: number){
     this.s.afegirProductes(id);
+    console.log(this.s.productes);
   }
 }

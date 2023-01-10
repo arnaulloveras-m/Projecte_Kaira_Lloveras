@@ -4,23 +4,79 @@
   <meta charset="UTF-8">
   <title>Samarretes NBA</title>
   <link rel="stylesheet" type="text/css" href="cistella.component.css" title="style">
-  <script src="../scripts/Afegir.js"></script>
-  <script src="../scripts/Logic.js"></script>
 </head>
   <body class="body_principal">
   <div class="comprar">
       <br>
+    <aside>
+      <div class="total">
+        <p>Preu total de compra és: <span id="preu">{{this.total}}</span>€</p>
+        <label><input type="radio" value="">He llegit i accepto les condicions</label>
+        <br>
+        <br>
+        <a class="btntotal" href="" role="button">Comprar</a>
+      </div>
+    </aside>
     <div id="contenidor1">
+      <div *ngIf="this.s.productes[1]!=0" id="producte1">
+        <img class="img_prod" src="assets/samarretabucks.png">
+        <p class="p_prod">Preu Samarreta Bucks: 79.99€</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="producte2">
+        <img class="img_prod" src="assets/bufanda_buks.jpg">
+        <p class="p_prod">Preu Gorra Bucks: 32.09€</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="producte3">
+        <img class="img_prod" src="assets/pijama_bucks.png">
+        <p class="p_prod">Preu Pijama Bucks: 24.00€</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="producte4">
+        <img class="img_prod" src="assets/samarretabulls.png">
+        <p class="p_prod">Preu Samarreta Bulls: 79.99€</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="producte5">
+        <img class="img_prod" src="assets/calzoncillos_bulls.jpg">
+        <p class="p_prod">Preu Calçotets Bucks: 14.99€</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div id="producte6">
+        <img class="img_prod" src="assets/mascota_bulls.jpeg">
+        <p class="p_prod">Preu Mascota Bucks: 11.99€</p>
+      </div>
     </div>
-      <aside>
-        <div class="total">
-          <p>Preu total de compra és: <span id="preu">{{this.total}}</span></p>
-          <label><input type="radio" value="">He llegit i accepto les condicions</label>
-          <br>
-          <br>
-          <a class="btntotal" href="" role="button">Comprar</a>
-        </div>
-      </aside>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </div>
   </body>
 </html>

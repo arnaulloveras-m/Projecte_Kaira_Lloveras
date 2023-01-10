@@ -13,6 +13,7 @@ import {LoginComponent} from "./login/login.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AppRoutingModule} from "./app-routing.module";
 import {AuthModule} from "./auth/auth.module";
+import {ServeiService} from "./serveis/servei.service";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import {AuthModule} from "./auth/auth.module";
     AuthModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [ServeiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
