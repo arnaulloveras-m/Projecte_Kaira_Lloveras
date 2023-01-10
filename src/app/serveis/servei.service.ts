@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
+import {Injectable, OnInit} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 //@ts-ignore
-export class ServeiService {
+export class ServeiService implements OnInit{
 
   productes: number[] = [0,0,0,0,0,0,0];
 
@@ -24,4 +24,12 @@ export class ServeiService {
     return this.productes;
   }
 
+  buidarCistella(){
+    this.productes=[0,0,0,0,0,0,0]
+  }
+
+  ngOnInit(){
+
+
+  }
 }
