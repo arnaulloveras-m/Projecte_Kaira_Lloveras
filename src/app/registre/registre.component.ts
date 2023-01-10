@@ -12,7 +12,6 @@ export class RegistreComponent {
   /*Fa que sigui obligatori omplir els següents camps del registre.*/
   registerForm = new FormGroup({
     name: new FormControl('', Validators.required),
-    surname: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
     phone: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
