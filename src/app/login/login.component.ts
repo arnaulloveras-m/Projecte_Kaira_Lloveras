@@ -21,7 +21,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  /*Mira si les dades del correu i la contrasenya que hi ha al registre coincideixen amb el Log.*/
+  /*Mira si les dades del correu i la contrasenya que hi ha al registre coincideixen amb el Log,
+   si t'equivoques surt un missatge d'error.*/
   ngOnInit(): void {
     this.registerData = JSON.parse(localStorage.getItem("register") || '')
     Object.entries(this.registerData).forEach(([key, value]) => {
